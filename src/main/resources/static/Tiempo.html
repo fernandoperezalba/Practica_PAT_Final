@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+    <script type="text/javascript" src="js/tiempo.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/js-cookie@rc/dist/js.cookie.min.js"></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+    <script type="text/javascript" src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript" src="vendor/bootstrap/js/bootstrap.js"></script>
+    <link href="vendor/bootstrap/css/bootstrap.min.css" type="text/css" rel="stylesheet">
+    <link href="css/tiempo.css" rel="stylesheet">
+
+</head>
+<body>
+
+<nav class="navbar navbar-expand-xl navbar-light" style="background-color: #93D9DE;">
+    <a class="navbar-brand" href="homeAbuelos.html">Inicio</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <div class="elem">
+                <li class="nav-item">
+                    <a class="nav-link" href="Calendario.html">Calendario</a>
+                </li>
+            </div>
+            <div class="elem">
+                <li class="nav-item">
+                    <a class="nav-link" href="Tiempo.html">Tiempo</a>
+                </li>
+            </div>
+            <div class="elem">
+                <li class="nav-item">
+                    <a class="nav-link" href="Cocina.html">Cocina</a>
+                </li>
+            </div>
+            <div class="elem">
+                <li class="nav-item">
+                    <a class="nav-link" href="Naturaleza.html">Naturaleza</a>
+                </li>
+            </div>
+            <div class="elem">
+                <li class="nav-item" id="salir">
+                    <a class="nav-link" href="out.html" style="color: red">Salir</a>
+                </li>
+            </div>
+        </ul>
+    </div>
+</nav>
+
+<section class="top-banner">
+  <div class="container">
+    <h1 class="heading">El tiempo</h1>
+    <form id="buscador">
+      <input id="entry" type="text" placeholder="Introduzca una ciudad" autofocus>
+      <button id="entry_btn" type="submit">Buscar</button>
+      <span class="msg"></span>
+    </form>
+  </div>
+</section>
+<section class="ajax-section">
+  <div class="container">
+    <ul id="contenido" class="cities"></ul>
+  </div>
+</section>
+</body>

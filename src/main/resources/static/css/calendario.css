@@ -1,0 +1,41 @@
+
+
+#mainTitle{
+	text-align: center;
+	font-size: 40pt;
+	color: #519EA3;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.navbar-brand {
+    position-fixed;
+	margin-left: 50px;
+	font-size: 25px;
+}
+
+.nav-item {
+	margin-left: 10px;
+	font-size: 20px;
+}
+
+#salir {
+    margin: 0 auto;
+    margin-left: 600px;
+    align-items: right;
+}
+
+.tab_item {
+	text-align: center;
+}
+
+iframe {
+    align-items=center;
+    justify-content: center;
+    border: 10px solid;
+    border-color: #519EA3;
+}
+
+#calendario{
+    text-align: center;
+}

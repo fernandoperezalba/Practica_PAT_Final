@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home ayudantes</title>
+    <script type="text/javascript" src="js/home.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/js-cookie@rc/dist/js.cookie.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript" src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript" src="vendor/bootstrap/js/bootstrap.js"></script>
+    <link href="vendor/bootstrap/css/bootstrap.min.css" type="text/css" rel="stylesheet">
+    <link href="vendor/bootstrap/css/bootstrap.min.css" type="text/css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link href="css/homeAyudantes.css" type="text/css" rel="stylesheet">
+    <script type="text/javascript" src="js/ayudante.js"></script>
+
+</head>
+<body>
+<nav class="navbar navbar-expand-xl navbar-light" style="background-color: #93D9DE;">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <div class="elem">
+                <li class="nav-item">
+                    <a class="nav-link" href="homeAyudantes.html">Configuración datos</a>
+                </li>
+            </div>
+            <div class="elem">
+                <li class="nav-item">
+                    <a class="nav-link" href="Calendario2.html">Gestión del calendario</a>
+                </li>
+            </div>
+            <div class="elem">
+                <li class="nav-item" id="salir">
+                    <a class="nav-link" href="out.html" style="color: red">Salir</a>
+                </li>
+            </div>
+        </ul>
+    </div>
+</nav>
+
+<div class=card= id="configuracion">
+    <form id="myform1">
+        <div class="form-row">
+            <h2>Datos abuelo: </h2>
+        </div>
+        <div class="form-row">
+            <div class="form-group col-md-6">
+                <label for="password1">Nueva Contraseña</label>
+                <input type="password" class="form-control" id="password1" placeholder="Nueva Contraseña">
+            </div>
+            <div class="form-group col-md-6">
+                <label for="password2">Repita la contraseña</label>
+                <input type="password" class="form-control" id="password2" placeholder="Repita contraseña">
+            </div>
+        </div>
+        <button type="submit" class="btn btn-primary btn-custom">Cambiar</button>
+    </form>
+    <form id="myform2">
+        <div class="form-row">
+            <h2>Datos ayudante: </h2>
+        </div>
+        <div class="form-row">
+            <div class="form-group col-md-6">
+                <label for="password3">Nueva Contraseña</label>
+                <input type="password" class="form-control" id="password3" placeholder="Nueva Contraseña">
+            </div>
+            <div class="form-group col-md-6">
+                <label for="password4">Repita la contraseña</label>
+                <input type="password" class="form-control" id="password4" placeholder="Repita contraseña">
+            </div>
+        </div>
+        <button type="submit" class="btn btn-primary btn-custom">Cambiar</button>
+    </form>
+</div>
+
+</body>
+</html>

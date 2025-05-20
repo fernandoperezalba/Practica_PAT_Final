@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Calendario</title>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/js-cookie@rc/dist/js.cookie.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript" src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript" src="vendor/bootstrap/js/bootstrap.js"></script>
+    <link href="vendor/bootstrap/css/bootstrap.min.css" type="text/css" rel="stylesheet">
+    <link href="vendor/bootstrap/css/bootstrap.min.css" type="text/css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link href="css/calendario.css" rel="stylesheet">
+</head>
+<body>
+
+<nav class="navbar navbar-expand-xl navbar-light" style="background-color: #93D9DE;">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <div class="elem">
+                <li class="nav-item">
+                    <a class="nav-link" href="homeAyudantes.html">Configuración datos</a>
+                </li>
+            </div>
+            <div class="elem">
+                <li class="nav-item">
+                    <a class="nav-link" href="Calendario2.html">Gestión del calendario</a>
+                </li>
+            </div>
+            <div class="elem">
+                <li class="nav-item" id="salir">
+                    <a class="nav-link" href="out.html" style="color: red">Salir</a>
+                </li>
+            </div>
+        </ul>
+    </div>
+</nav>
+
+<h2 id="mainTitle">Calendario</h2>
+<a href="https://accounts.google.com/signin/v2/identifier?service=cl&passive=1209600&osid=1&continue=https%3A%2F%2Fcalendar.google.com%2Fcalendar%2Frender%3Fcid%3Dkv6fg8n9an74itmaph1ls5omsc%40group.calendar.google.com&followup=https%3A%2F%2Fcalendar.google.com%2Fcalendar%2Frender%3Fcid%3Dkv6fg8n9an74itmaph1ls5omsc%40group.calendar.google.com&scc=1&flowName=GlifWebSignIn&flowEntry=ServiceLogin" target="_blank">
+    <h3 align="center">Editar calendario</h3>
+</a>
+<p id="calendario"><iframe src="https://calendar.google.com/calendar/embed?height=600&amp;wkst=1&amp;bgcolor=%238ec1c5&amp;ctz=Europe%2FMadrid&amp;src=a3Y2Zmc4bjlhbjc0aXRtYXBoMWxzNW9tc2NAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;color=%23616161&amp;showTitle=0&amp;showPrint=0&amp;showTabs=1&amp;showCalendars=0" style="border-width:0" width="800" height="600" frameborder="0" scrolling="no"></iframe></p>
+
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Regristrarse</title>
+    <link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
+    <script type="text/javascript" src="js/registrarse.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/js-cookie@rc/dist/js.cookie.min.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="css/registrarse.css">
+
+</head>
+<body onload="saveValues1()">
+<div>
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light" id="nav-registro">
+        <div class="container-fluid">
+            <h1 class="display-4">Registrarse:</h1>
+        </div>
+        <div class="container-fluid" id="circular-pagination" >
+            <input type="radio" name="nav" id="input-1" class="input" checked />
+            <input type="radio" name="nav" id="input-2" class="input" disabled/>
+            <input type="radio" name="nav" id="input-3" class="input" disabled/>
+            <input type="radio" name="nav" id="input-4" class="input" disabled/>
+            <label for="input-1" class="button button-1">1</label>
+            <label for="input-2" class="button button-2">2</label>
+            <label for="input-3" class="button button-3">3</label>
+            <label for="input-4" class="button button-4">4</label>
+        </div>
+    </nav>
+</div>
+<div class=card= id="registro">
+    <form id="myform">
+        <div class="form-row">
+            <h2>Datos abuelo: </h2>
+        </div>
+        <div class="form-row">
+            <div class="form-group col-md-6">
+                <label for="name1">Nombre</label>
+                <input type="text" class="form-control" id="name1" placeholder="Nombre">
+            </div>
+            <div class="form-group col-md-6">
+                <label for="lastName1">Apellidos</label>
+                <input type="text" class="form-control" id="lastName1" placeholder="Apellidos">
+            </div>
+        </div>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                <label for="fecha1">Fecha de Nacimiento</label>
+                <input type="date" class="form-control fecha" id="fecha1">
+                </div>
+            </div>
+        <button type="submit" class="btn btn-primary btn-custom">Siguiente</button>
+    </form>
+</div>
+</body>
+</html>

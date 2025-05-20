@@ -1,0 +1,127 @@
+#nav-registro{
+  margin: 0 auto;
+  background-color: #519EA3;
+  height: 70px;
+  position: fixed;
+}
+
+#circular-pagination {
+  position: fixed;
+  left: 50%;
+  top: -30px;
+  margin: 0 auto;
+  height: 70px;
+  width: 250px;
+  margin-top: 65px;
+  background: #519EA3;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+input {
+  display: none;
+}
+
+.button {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5px;
+  cursor: pointer;
+  transition: .3s ease-in-out;
+}
+
+.button:hover {
+  transform: scale(1.2) translateY(-5px);
+}
+
+.button::before {
+  content: '';
+  width: 40px;
+  height: 40px;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  transform: scale(0);
+  z-index: -1;
+  transition: .3s ease-in-out;
+}
+
+#input-1:checked~.button-1 {
+  color: #519EA3;
+}
+
+#input-1:checked~.button-1:before {
+  transform: scale(1);
+}
+
+#input-2:checked~.button-2 {
+  color: #519EA3;
+}
+
+#input-2:checked~.button-2:before {
+  transform: scale(1);
+}
+
+#input-3:checked~.button-3 {
+  color: #519EA3;
+}
+
+#input-3:checked~.button-3:before {
+  transform: scale(1);
+}
+
+#input-4:checked~.button-4 {
+  color: #519EA3;
+}
+
+#input-4:checked~.button-4:before {
+  transform: scale(1);
+}
+
+.display-4{
+  position: absolute;
+  left: 5%;
+  right: 95%;
+  color: white;
+  font-size: 50px;
+  justify-content: left;
+  align-items: left;
+}
+
+#registro{
+  margin: 0 auto;
+  margin-top: 100px;
+  width: 500px;
+  align-items: center;
+  background-color: #99CDD1;
+  border-radius: 25px;
+  padding: 20px;
+  color: white;
+}
+
+.btn-custom{
+  background-color: #519EA3;
+  border-color: #195458;
+}
+
+.btn-custom:hover{
+  background-color: #195458;
+  border-color: #195458;
+}
+
+.fecha{
+  color: gray;
+}
+
+h2{
+  margin: 0 auto;
+  margin-bottom: 5px;
+}

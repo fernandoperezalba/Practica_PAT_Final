@@ -1,0 +1,46 @@
+#configuracion{
+  margin: 0 auto;
+  margin-top: 50px;
+  width: 800px;
+  align-items: center;
+  background-color: #99CDD1;
+  border-radius: 25px;
+  padding: 20px;
+  color: white;
+}
+
+.btn-custom{
+  background-color: #519EA3;
+  border-color: #195458;
+}
+
+.btn-custom:hover{
+  background-color: #195458;
+  border-color: #195458;
+}
+
+
+#mainTitle{
+	text-align: center;
+	font-size: 40pt;
+	color: #519EA3;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.navbar-brand {
+    position-fixed;
+	margin-left: 50px;
+	font-size: 25px;
+}
+
+.nav-item {
+	margin-left: 10px;
+	font-size: 20px;
+}
+
+#salir {
+    margin: 0 auto;
+    margin-left: 600px;
+    align-items: right;
+}

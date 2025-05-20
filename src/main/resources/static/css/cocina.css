@@ -1,0 +1,48 @@
+
+#mainTitle{
+	text-align: center;
+	font-size: 40pt;
+	color: #519EA3;
+	margin-top: 50px;
+}
+
+.navbar-brand {
+    position-fixed;
+	margin-left: 50px;
+	font-size: 25px;
+}
+
+.nav-item {
+	margin-left: 10px;
+	font-size: 20px;
+}
+
+#salir {
+	margin: 0 auto;
+    margin-left: 600px;
+    align-items: right;
+}
+
+
+.btn-outline-secondary:hover{
+	background-color: #519EA3; !important;
+}
+
+.input-group{
+	margin-top: 50px;
+}
+
+.input-group-text{
+	color: white;
+	background-color: #519EA3;
+	text-align: center;
+	margin-top: 10px;
+	border: 50px;
+}
+
+.row2{
+	width: 100%;
+    max-width: 300px;
+    margin-bottom: 20px;
+    white-space: nowrap;
+}
