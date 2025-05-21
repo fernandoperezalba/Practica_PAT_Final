@@ -1,5 +1,5 @@
 # -------- Stage 1: Build the application --------
-FROM openjdk:11-jdk AS build
+FROM openjdk:17-jdk AS build
 WORKDIR /app
 LABEL authors="fpa20"
 
@@ -14,7 +14,7 @@ RUN chmod +x ./mvnw
 RUN ./mvnw clean package -DskipTests
 
 # -------- Stage 2: Run the application --------
-FROM openjdk:11-jdk
+FROM openjdk:17-jdk
 VOLUME /tmp
 
 # Copy the JAR file built in Stage 1
