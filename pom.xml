@@ -20,7 +20,7 @@
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-		<java.version>11</java.version>
+		<java.version>17</java.version>
 		<rest-assured.version>4.0.0</rest-assured.version>
 		<wiremock.version>2.24.1</wiremock.version>
 	</properties>
