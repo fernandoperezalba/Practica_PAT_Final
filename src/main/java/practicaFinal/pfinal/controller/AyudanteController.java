@@ -1,6 +1,8 @@
 package practicaFinal.pfinal.controller;
 
 import lombok.extern.slf4j.Slf4j;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
@@ -19,6 +21,9 @@ import java.util.List;
         path = "/api",
         produces = MediaType.APPLICATION_JSON_VALUE)
 public class AyudanteController {
+
+    private static final Logger log = LoggerFactory.getLogger(AyudanteController.class);
+
     @Autowired
     private AyudanteService ayudanteService;
 
@@ -27,7 +32,7 @@ public class AyudanteController {
     ResponseEntity<Ayudante> newUser(@Valid @RequestBody Ayudante request) {
 
         String nombre = request.getNombre();
-        LOGGER.info("Realizando el registro para: "+nombre);
+        log.info("Realizando el registro para: {}", nombre);
 
         return ayudanteService.newAyudante(request.getId() ,nombre, request.getApellidos(), request.getCorreo(), request.getId_abuelo());
     }

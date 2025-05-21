@@ -1,5 +1,7 @@
 package practicaFinal.pfinal.controller;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
@@ -28,6 +30,8 @@ import java.util.List;
         produces = MediaType.APPLICATION_JSON_VALUE)
 public class UserController {
 
+    private static final Logger log = LoggerFactory.getLogger(UserController.class);
+
     @Autowired
     private UserService userService;
 
@@ -47,7 +51,7 @@ public class UserController {
         );
 
         String username = userRequest.getUsername();
-        LOGGER.info("Realizando el registro para el usuario: "+username);
+        log.info("Realizando el registro para el usuario: {}", username);
 
 
         return userService.newUser(userRequest.getId() ,username, userRequest.getPassword1(), userRequest.getPassword2());
@@ -59,7 +63,7 @@ public class UserController {
         /*
         Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
         String currentPrincipalName = authentication.getName();
-        LOGGER.info("Current authenticated user: {}", currentPrincipalName);
+        log.info("Current authenticated user: {}", currentPrincipalName);
         */
         return userService.updatePassword(userChangePasswordRequest);
     }

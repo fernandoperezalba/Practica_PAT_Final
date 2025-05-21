@@ -1,5 +1,8 @@
 package practicaFinal.pfinal.controller;
 
+import lombok.extern.slf4j.Slf4j;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import practicaFinal.pfinal.model.JwtRequest;
 import practicaFinal.pfinal.model.JwtResponse;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -18,8 +21,11 @@ import org.springframework.web.bind.annotation.RestController;
 
 import javax.validation.Valid;
 
+@Slf4j
 @RestController
 public class JwtAuthenticationController {
+
+	private static final Logger log = LoggerFactory.getLogger(JwtAuthenticationController.class);
 
 	@Autowired
 	private AuthenticationManager authenticationManager;

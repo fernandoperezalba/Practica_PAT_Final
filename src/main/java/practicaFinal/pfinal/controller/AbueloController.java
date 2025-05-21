@@ -1,6 +1,8 @@
 package practicaFinal.pfinal.controller;
 
 import lombok.extern.slf4j.Slf4j;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
@@ -18,6 +20,9 @@ import java.util.List;
         path = "/api",
         produces = MediaType.APPLICATION_JSON_VALUE)
 public class AbueloController {
+
+    private static final Logger log = LoggerFactory.getLogger(AbueloController.class);
+
     @Autowired
     private AbueloService abueloService;
 
@@ -26,7 +31,7 @@ public class AbueloController {
     ResponseEntity<Abuelo> newAbuelo(@Valid @RequestBody Abuelo request) {
 
         String nombre = request.getNombre();
-        LOGGER.info("Realizando el registro para: "+nombre);
+        log.info("Realizando el registro para: "+nombre);
 
         return abueloService.newAbuelo(request.getId() ,nombre, request.getApellidos(), request.getFecha());
     }

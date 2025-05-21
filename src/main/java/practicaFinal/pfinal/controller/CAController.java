@@ -1,5 +1,7 @@
 package practicaFinal.pfinal.controller;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import practicaFinal.pfinal.model.GlobalErrorResponse;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.HttpHeaders;
@@ -15,10 +17,12 @@ import org.springframework.web.servlet.mvc.method.annotation.ResponseEntityExcep
 @ControllerAdvice
 public class CAController extends ResponseEntityExceptionHandler {
 
+    private static final Logger log = LoggerFactory.getLogger(CAController.class);
+
     @ExceptionHandler({RuntimeException.class})
     protected ResponseEntity<Object> handleRuntimeException(RuntimeException ex, WebRequest request) {
 
-        LOGGER.error(ex.getLocalizedMessage(), ex);
+        log.error(ex.getLocalizedMessage(), ex);
 
         if (ex instanceof BadCredentialsException) {
             String message = "Bad Credentials";
